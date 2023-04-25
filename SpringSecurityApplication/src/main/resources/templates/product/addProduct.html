@@ -5,6 +5,7 @@
     <title>Добавление товара</title>
 </head>
 <body>
+<a href="/admin"><input type="button" value="Вернуться в админ-панель"></a>
 <h3>Добавление товара</h3>
 <form th:method="POST" th:action="@{/admin/product/add}" th:object="${product}" enctype="multipart/form-data">
     <label for="title">Введите наименование товара: </label>

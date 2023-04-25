@@ -6,6 +6,7 @@
 </head>
 <body>
 <h3>Редактирование товара</h3>
+<a href="/admin"><input type="button" value="Вернуться в админ-панель"></a>
 <form th:method="POST" th:action="@{/admin/product/edit/{id}(id=${product.getId()})}" th:object="${product}" enctype="multipart/form-data">
     <label for="title">Введите наименование товара: </label>
     <input type="text" th:field="*{title}" placeholder="Наименование" id="title">
